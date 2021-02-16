@@ -6,9 +6,6 @@ import ImageList from './components/ImageList'
 
 import { getImages, deleteImage } from './constants/api'
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
-
 const App = () => {
 
   const [dataImages, setDataImages] = useState([])
