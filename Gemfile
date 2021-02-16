@@ -27,6 +27,13 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
+  #rspec-rails brings the RSpec testing framework to Ruby on Rails as a drop-in alternative to its default testing framework, Minitest.
+  gem 'rspec-rails', '~> 4.0.2'
+  #factory_bot_rails provides Rails integration for factory_bot.
+  gem 'factory_bot_rails'
+  #Set of matchers and helpers for RSpec 3 to allow you test your JSON API responses like a pro.
+  gem 'rspec-json_expectations'
 end
 
 group :development do
