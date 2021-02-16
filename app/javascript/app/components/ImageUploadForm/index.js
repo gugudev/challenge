@@ -4,19 +4,15 @@ import { uploadImage } from '../../constants/api'
 
 const ImageUploadForm = ({callBackImageUploaded}) => {
 
-  const [statusOnUploadingFile, setStatusOnUploadingFile] = useState(false);
-
   const onSelectFile = (file) => {
-    setStatusOnUploadingFile(true)
 
-      uploadImage(file)
-      .then(res => {
-        setStatusOnUploadingFile(false)
-        callBackImageUploaded()
-      })
-      .catch(err => {
-        setStatusOnUploadingFile(false)
-      })
+    uploadImage(file)
+    .then(res => {
+      alert('Success Upload')
+      callBackImageUploaded()
+    })
+    .catch(err => {
+    })
 
   }
 

@@ -4,7 +4,7 @@ import './styles'
 
 const ImageCard = ({id, url, filename, byte_size, callBackDeleteImage}) => (
 
-  <div className="card col">
+  <div className="card col-4">
     <img src={url} className="card-img-top img-fluid" />
 
     <div className="card-body">
