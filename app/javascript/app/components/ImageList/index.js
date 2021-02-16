@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 
 import ImageCard from '../ImageCard'
 
+import './styles'
+
 const ImageList = (props) =>  {
 
   const renderImagesCards = () => (
@@ -10,7 +12,7 @@ const ImageList = (props) =>  {
   )
 
   return (
-    <div className="row bg-light">
+    <div className="row bg-light cards">
       { renderImagesCards() }
     </div>
   )

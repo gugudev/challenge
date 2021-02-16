@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-import { IMAGES_PATH, IMAGE_PATH } from './index'
+import { IMAGES_PATH } from './index'
 
-export const getImages = () => axios.get(IMAGES_PATH)
-export const deleteImage = (id) => axios.delete(`${IMAGE_PATH}/${id}`)
+export const getImages = () => axios.get(`${IMAGES_PATH}.json`)
+export const deleteImage = (id) => axios.delete(`${IMAGES_PATH}/${id}.json`)
 
 export const uploadImage = (file) => {
   const formData = new FormData();

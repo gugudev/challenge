@@ -34,7 +34,7 @@ const App = () => {
 
     deleteImage(idImage)
     .then(res => {
-
+      loadAllImages()
     })
 
   }
